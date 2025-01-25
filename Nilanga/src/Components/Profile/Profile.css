@@ -1,0 +1,71 @@
+/* Styling for the main container */
+#profile-container {
+    display: flex; /* Flex container to arrange items side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align items vertically */
+    /* height: 100vh; Full height for the section */
+    padding: 0 3rem; /* Add horizontal padding */
+    background: linear-gradient(135deg, #1e1e2f, #3b3b58); /* Gradient background */
+    color: white;
+    font-family: "Geologic, sans-serif", sans-serif;
+}
+
+/* Left section (text) styling */
+#div {
+    max-width: 60%; /* Limit text width for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0.5em 0;
+}
+
+h1 span {
+    position: relative;
+    display: inline-block;
+    color: #ff8800;
+    height: 1.1em;
+    overflow: hidden; /* Hide overflow text */
+}
+
+h1 span span {
+    display: block;
+    animation: animateWord 5s infinite ease-in-out; /* Word animation */
+}
+
+@keyframes animateWord {
+    25% {
+        transform: translateY(0%); /* Show first word */
+    }
+    50% {
+        transform: translateY(-100%); /* Show second word */
+    }
+    75% {
+        transform: translateY(-200%); /* Show third word */
+    }
+    100% {
+        transform: translateY(-300%); /* Show fourth word (if applicable) */
+    }
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 1em;
+}
+
+/* Right section (image) styling */
+.img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circular image */
+    border: 5px solid #ff8800; /* Highlighted border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Modern shadow */
+    transition: all 0.4s ease; /* Smooth hover effect */
+}
+
+.img:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 12px 20px rgba(255, 136, 0, 0.8); /* Brighter shadow on hover */
+}
