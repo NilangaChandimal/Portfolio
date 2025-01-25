@@ -1,0 +1,102 @@
+.experience-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #00adb5;
+    margin-bottom: 20px;
+  }
+  
+  .icon-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .icon-item {
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .html-icon {
+    color: #FF2D20;
+  }
+  .css-icon {
+    color: #071eeb;
+  }
+  .js-icon {
+    color: #def706;
+  }
+  .php-icon {
+    color: #595b70;
+  }
+  .boostrap-icon {
+    color: #5707eb;
+  }
+  .python-icon {
+    color: #ebc107;
+  }
+  .react-icon {
+    color: #61DBFB;
+  }
+  .mysql-icon {
+    color: #00758f;
+  }
+  
+  .tailwind-icon {
+    color: #38bdf8;
+  }
+  
+  .tensorflow-icon {
+    color: #ff6f00;
+  }
+  
+  .nlp-icon {
+    color: #ff9800;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .laravel-icon {
+    color: #FF2D20;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #eee;
+  }
+
+/* Responsive layout adjustments */
+@media (max-width: 1024px) {
+    .icon-list {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .icon-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .icon-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+  }
+  
+  

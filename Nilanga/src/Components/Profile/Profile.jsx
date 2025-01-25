@@ -6,7 +6,7 @@ function Profile() {
     <div id="profile-container">
       {/* Left-hand side: Text content */}
       <div id="div">
-        <h2>I'm Nilanga Chandimal</h2>
+        <h3>I'm Nilanga Chandimal</h3>
         <h1 id="h1">
           I'M A
           <span>

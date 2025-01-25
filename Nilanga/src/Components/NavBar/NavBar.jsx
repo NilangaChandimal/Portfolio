@@ -27,7 +27,7 @@ function NavBar() {
 
       {/* Menu Links */}
       <div>
-        <MenuList linkname="About" url="#about" />
+        <MenuList linkname="About" url="#about"  />
         <MenuList linkname="Experience" url="#experience" />
         <MenuList linkname="Project" url="#project" />
         <MenuList linkname="Contact" url="#contact" />

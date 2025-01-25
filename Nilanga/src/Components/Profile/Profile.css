@@ -5,7 +5,7 @@
     align-items: center; /* Align items vertically */
     /* height: 100vh; Full height for the section */
     padding: 0 3rem; /* Add horizontal padding */
-    background: linear-gradient(135deg, #1e1e2f, #3b3b58); /* Gradient background */
+    background: linear-gradient(135deg, hwb(240 1% 4%), #04e7e7); /* Gradient background */
     color: white;
     font-family: "Geologic, sans-serif", sans-serif;
 }
