@@ -6,73 +6,65 @@
     --primary-color: #00adb5;
     --text-color: rgba(255, 255, 255, 0.9);
     --bg-color: #222831;
-    /* --accent-color: #035be7; */
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-  }
-  
-  .project-container {
-    /* max-width: 1000px; */
-    /* margin: 50px auto; */
-    padding: 0 3rem;
-    background: linear-gradient(135deg, hwb(240 1% 4%), #04e7e7);
-    /* background: var(--accent-color); */
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-  }
-
-  #project {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f4f4f4;
 }
 
 .project-container {
-    background-color: white;
+    background: linear-gradient(135deg, hwb(0 0% 100%), #055555);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-p {
-    list-style: none;
-    padding: 0;
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
 }
 
-p {
+.project-list {
     display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 10px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
 }
 
-p img {
-    width: 100px;
+.project-item {
+    background-color: #101313;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(148, 71, 71, 0.1);
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    width: 100%;
     height: auto;
-    margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-p div {
-    flex-grow: 1;
-}
-
-p .title {
-    font-size: 18px;
+.project-item h5 {
+    font-size: 1rem;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
+    color: #3acc6b;
+    margin-top: 10px;
 }
 
-p .description {
-    font-size: 14px;
-    color: #666;
+.project-item p {
+    font-size: 0.7rem;
+    color: #f5ecec;
+    margin-top: 5px;
 }

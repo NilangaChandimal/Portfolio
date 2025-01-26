@@ -31,20 +31,6 @@
 }
 
 
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    display: grid;
-    height: 100%;
-    place-items: center;
-    background-color: #212121;
-} */
-
 body {
     overflow: hidden;
 }
@@ -94,13 +80,13 @@ body {
 
 .btn-sensor {
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0 0);
-    height: 55dvmax;
+    height: 35dvmax;
     overflow: hidden;
     position: absolute;
-    left: calc(50% - 55dvmax / 2);
-    top: calc(50% - 55dvmax / 2);
-    transform: rotate(calc(var(--a) * 1deg)) translateY(calc(55dvmax * -50 / 100));
-    width: 55dvmax;
+    left: calc(50% - 35dvmax / 2);
+    top: calc(50% - 35dvmax / 2);
+    transform: rotate(calc(var(--a) * 1deg)) translateY(calc(35dvmax * -50 / 100));
+    width: 35dvmax;
     z-index: 99;
 }
 

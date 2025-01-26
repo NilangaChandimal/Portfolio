@@ -1,7 +1,37 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  --primary-color: #00adb5;
+  --text-color: rgba(255, 255, 255, 0.9);
+  --bg-color: #222831;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .experience-container {
-    text-align: center;
-    padding: 50px 20px;
-  }
+  padding: 0 3rem;
+  background: linear-gradient(135deg, hwb(0 0% 100%), #055555);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 100%; 
+  margin: 2rem auto;
+}
+.experience-content {
+  display: flex; /* Flexbox to divide into left and right */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
   
   h2 {
     font-size: 2.5rem;
@@ -13,16 +43,16 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     gap: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 70%; /* Limit the icon list width */
   }
+  
   
   .icon-item {
     text-align: center;
   }
   
   .icon {
-    font-size: 5rem;
+    font-size: 6rem;
     transition: transform 0.3s ease-in-out;
   }
   .html-icon {
@@ -69,6 +99,22 @@
   .laravel-icon {
     color: #FF2D20;
   }
+  .vbnet-icon {
+  color: #5c2d91; /* Visual Studio color */
+}
+
+.cisco-icon {
+  color: #0084b4; /* Cisco color */
+}
+
+.java-icon {
+  color: #007396; /* Java color */
+}
+
+.postman-icon {
+  width: 70px;
+  height: 90px;
+}
   
   .icon:hover {
     transform: scale(1.1);
@@ -80,23 +126,53 @@
     color: #eee;
   }
 
+/* Cart styling */
+.cart {
+  background: #101313;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px 20px rgba(253, 2, 2, 0.3);
+  color: #fff;
+  width: 25%; /* Cart section width */
+}
+
+.cart h4 {
+  font-size: 1.5rem;
+  color: #00adb5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cart p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
 /* Responsive layout adjustments */
 @media (max-width: 1024px) {
-    .icon-list {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
-    }
+  .icon-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
   }
-  
-  @media (max-width: 768px) {
-    .icon-list {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
-    }
+
+  .experience-content {
+    flex-direction: column; /* Stack sections on smaller screens */
+    align-items: center;
   }
-  
-  @media (max-width: 480px) {
-    .icon-list {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    }
+
+  .cart {
+    width: 100%; /* Cart takes full width on smaller screens */
+    margin-top: 2rem;
   }
-  
-  
+}
+
+@media (max-width: 768px) {
+  .icon-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  }
+}

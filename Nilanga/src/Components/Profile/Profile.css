@@ -12,7 +12,7 @@
 
 /* Left section (text) styling */
 #div {
-    max-width: 60%; /* Limit text width for better readability */
+    max-width: 100%; /* Limit text width for better readability */
     text-align: left; /* Align text to the left */
 }
 
@@ -25,7 +25,7 @@ h1 span {
     position: relative;
     display: inline-block;
     color: #ff8800;
-    height: 1.1em;
+    height: 1.2em;
     overflow: hidden; /* Hide overflow text */
 }
 
