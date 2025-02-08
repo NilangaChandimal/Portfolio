@@ -4,10 +4,13 @@ import './About.css';
 function About() {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = './public/D M N C Jayathilaka.pdf';  
+    link.href = '/D M N C Jayathilaka.pdf';  // Correct path for public assets
     link.download = 'D M N C Jayathilaka.pdf';
+    document.body.appendChild(link);  // Append to body
     link.click();
+    document.body.removeChild(link);  // Remove after clicking
   };
+  
 
   return (
     <div id="about">

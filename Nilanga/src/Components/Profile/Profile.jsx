@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import nilanga from "../../assets/nilanga.png";
 
 function Profile() {
   return (
@@ -25,7 +26,7 @@ function Profile() {
 
       {/* Right-hand side: Profile image */}
       <div className="profile-image">
-        <img src="public/nilanga.jpg" alt="Nilanga Chandimal" />
+        <img src= {nilanga} alt="Nilanga Chandimal" />
       </div>
     </div>
   );

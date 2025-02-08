@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuList from './MenuList';
 import './NavBar.css';
+import nilanga from '../../assets/nilanga.png';
 
 function NavBar() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -19,7 +20,7 @@ function NavBar() {
 
   return (
     <div id="navcontent">
-      <img className='logo' src="public/nilanga.jpg" alt="Nilanga Chandimal" />
+      <img className='logo' src= {nilanga} alt="Nilanga Chandimal" />
       {/* Button Sensor Section */}
       {/* <div className="wrapper">
         <div style={{ "--a": 0 }} className="btn-sensor sensor-n"></div>

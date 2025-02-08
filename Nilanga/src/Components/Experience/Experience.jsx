@@ -16,6 +16,7 @@ import {
 import { SiTailwindcss, SiTensorflow, SiDatabricks } from "react-icons/si";
 import "./Experience.css";
 import { DiVisualstudio } from "react-icons/di";
+import postman from '../../assets/postman.ico'
 
 function Experience() {
   return (
@@ -93,8 +94,8 @@ function Experience() {
 
             <div className="icon-item">
               <img
-                src="./public/postman.ico"
-                alt=""
+                src= {postman}
+                alt="postman"
                 className="icon postman-icon"
               />
               <p>Postman</p>
