@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 #navcontent {
     display: flex;
     justify-content: space-between;
@@ -88,6 +93,17 @@ body {
     transform: rotate(calc(var(--a) * 1deg)) translateY(calc(35dvmax * -50 / 100));
     width: 35dvmax;
     z-index: 99;
+}
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Modern shadow */
+    transition: all 0.4s ease; /* Smooth hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .sensor-n:hover~.btn-button .btn-pupil {

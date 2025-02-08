@@ -47,6 +47,7 @@ function About() {
             <div className="button">Download</div>
           </div>
         </div>
+        <br />
     </div>
       </div>
     

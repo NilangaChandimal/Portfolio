@@ -8,7 +8,7 @@ function Profile() {
       <div id="div">
         <h3>I'm Nilanga Chandimal</h3>
         <h1 id="h1">
-          I'M A
+          I'M A {' '}
           <span>
             <span> CODER</span>
             <span> DEVELOPER</span>

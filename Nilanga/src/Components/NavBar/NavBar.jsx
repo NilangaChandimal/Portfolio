@@ -3,10 +3,25 @@ import MenuList from './MenuList';
 import './NavBar.css';
 
 function NavBar() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
   return (
     <div id="navcontent">
+      <img className='logo' src="public/nilanga.jpg" alt="Nilanga Chandimal" />
       {/* Button Sensor Section */}
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <div style={{ "--a": 0 }} className="btn-sensor sensor-n"></div>
         <div style={{ "--a": 45 }} className="btn-sensor sensor-ne"></div>
         <div style={{ "--a": 90 }} className="btn-sensor sensor-e"></div>
