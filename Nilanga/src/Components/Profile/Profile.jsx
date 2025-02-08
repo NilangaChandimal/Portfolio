@@ -5,14 +5,14 @@ function Profile() {
   return (
     <div id="profile-container">
       {/* Left-hand side: Text content */}
-      <div id="div">
+      <div className="profile-text">
         <h3>I'm Nilanga Chandimal</h3>
-        <h1 id="h1">
-          I'M A {' '}
-          <span>
-            <span> CODER</span>
-            <span> DEVELOPER</span>
-            <span> PROGRAMMER</span>
+        <h1>
+          I'M A {" "}
+          <span className="animated-text">
+            <span>CODER</span>
+            <span>DEVELOPER</span>
+            <span>PROGRAMMER</span>
           </span>
         </h1>
         <p>
@@ -24,8 +24,8 @@ function Profile() {
       </div>
 
       {/* Right-hand side: Profile image */}
-      <div>
-        <img className="img" src="public/nilanga.jpg" alt="Nilanga Chandimal" />
+      <div className="profile-image">
+        <img src="public/nilanga.jpg" alt="Nilanga Chandimal" />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
+/* Base Styling */
 html {
     scroll-behavior: smooth;
 }
-
 
 #navcontent {
     display: flex;
@@ -9,7 +9,7 @@ html {
     align-items: center;
     min-height: 10vh;
     background-color: rgb(0, 0, 0);
-    padding: 0 2rem; /* Add some horizontal padding for spacing */
+    padding: 0 2rem; /* Horizontal padding */
 }
 
 #navcontent img {
@@ -18,7 +18,7 @@ html {
 
 #navcontent > div {
     display: flex;
-    gap: 1rem; /* Add space between menu items */
+    gap: 1rem; /* Space between menu items */
 }
 
 .link {
@@ -35,7 +35,7 @@ html {
     color: white;
 }
 
-
+/* Button Sensor Section */
 body {
     overflow: hidden;
 }
@@ -94,6 +94,7 @@ body {
     width: 35dvmax;
     z-index: 99;
 }
+
 .logo {
     width: 3rem;
     height: 3rem;
@@ -106,6 +107,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Custom sensor hover effects */
 .sensor-n:hover~.btn-button .btn-pupil {
     transform: translateX(0) translateY(calc(-3 * 20%));
 }
@@ -166,30 +168,54 @@ body {
     }
 
     25% {
-        background: linear-gradient(0deg,
-                #000 0% 9%,
-                transparent 10% 90%,
-                #000 91% 100%);
+        background: linear-gradient(0deg, #000 0% 9%, transparent 10% 90%, #000 91% 100%);
     }
 
     50% {
-        background: linear-gradient(0deg,
-                #000 0% 18%,
-                transparent 19% 81%,
-                #000 82% 100%);
+        background: linear-gradient(0deg, #000 0% 18%, transparent 19% 81%, #000 82% 100%);
     }
 
     75% {
-        background: linear-gradient(0deg,
-                #000 0% 27%,
-                transparent 28% 72%,
-                #000 73% 100%);
+        background: linear-gradient(0deg, #000 0% 27%, transparent 28% 72%, #000 73% 100%);
     }
 
     100% {
-        background: linear-gradient(0deg,
-                #000 0% 35%,
-                transparent 36% 64%,
-                #000 65% 100%);
-    }
+        background: linear-gradient(0deg, #000 0% 35%, transparent 36% 64%, #000 65% 100%);
+    }
+}
+
+/* Mobile responsiveness for horizontal layout */
+@media (max-width: 768px) {
+    #navcontent {
+        flex-direction: row; /* Keep the layout horizontal on mobile */
+        align-items: center; /* Keep items aligned center */
+    }
+
+    #navcontent img {
+        height: 50px; /* Adjust logo size */
+    }
+
+    #navcontent > div {
+        flex-direction: row; /* Keep menu items in a row on mobile */
+        gap: 1rem; /* Add space between items */
+    }
+
+    .link {
+        font-size: 1.2rem; /* Increase font size for readability */
+    }
+
+    .wrapper {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 2.5rem; /* Smaller logo for very small screens */
+        height: 2.5rem;
+    }
+
+    .link {
+        font-size: 1rem; /* Smaller font size on very small screens */
+    }
 }
