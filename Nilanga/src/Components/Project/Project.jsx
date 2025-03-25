@@ -9,6 +9,10 @@ import image6 from "../../assets/service.png"
 import image7 from "../../assets/shop.png"
 import image8 from "../../assets/todo.png"
 import image9 from "../../assets/vlog.png"
+import image10 from "../../assets/tourism.png"
+import image11 from "../../assets/visa.png"
+import image12 from "../../assets/mern.png"
+
 
 function Project() {
   let projects = [
@@ -18,6 +22,20 @@ function Project() {
       "title": "Imperial Wisdom LMS",
       "description": "A university Learning Management System (LMS) developed as part of a group project. It is based on a pre-designed template, which I customized and enhanced to improve functionality and user experience.",
       "category": "Group Project"
+    },
+    {
+      "id": 10,
+      "image": image10,
+      "title": "Tourism Management System",
+      "description": "A Tourism Management System developed as admin panel with google authentication and mail configuration. It is based on a pre-designed template, which I customized and enhanced to improve functionality and user experience.",
+      "category": "Individual Project"
+    },
+    {
+      "id": 11,
+      "image": image11,
+      "title": "Visa Management System",
+      "description": "A Visa Management System developed as admin panel with google authentication and mail configuration. It is based on a pre-designed template, which I customized and enhanced to improve functionality and user experience.",
+      "category": "Individual Project"
     },
     {
       "id": 2,
@@ -73,6 +91,13 @@ function Project() {
       "image": image9,
       "title": "Vlog Page",
       "description": "A simple vlog page developed using HTML5, CSS, and JavaScript, designed to showcase video content with an engaging user interface.",
+      "category": "Individual Project"
+    },
+    {
+      "id": 12,
+      "image": image12,
+      "title": "MERN Application",
+      "description": "A MERN stack application, a full-stack JavaScript framework, is a popular choice for building web applications. It consists of MongoDB, Express.js, React.js, and Node.js. i used email authentication. as well as i connected to the Firebase to forgot password feature.",
       "category": "Individual Project"
     }
   ];

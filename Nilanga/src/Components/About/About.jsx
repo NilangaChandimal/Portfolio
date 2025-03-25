@@ -20,7 +20,7 @@ function About() {
           I completed my degree as a B.Sc.(Hons) in Computer Science at the
           Eastern University of Sri Lanka. I have a strong technical background in
           web development, with expertise in programming languages such as Java,
-          HTML, CSS, JavaScript, PHP, C++, MySQL, and VB.Net, and frameworks
+          HTML, CSS, JavaScript, PHP, Python, MySQL, and VB.Net, and frameworks
           including Bootstrap, Laravel, and React JS.
         </p>
         <p className='about-para'>My academic projects and research include topics such as:</p>
